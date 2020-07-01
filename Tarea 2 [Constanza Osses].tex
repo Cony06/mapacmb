@@ -1,0 +1,84 @@
+\documentclass[twocolumn,letterpaper,spanish]{revtex4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{bm}
+%\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{subfig}
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arccosh}{arccosh}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\usepackage[spanish,es-tabla]{babel}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\beq}{\begin{eqnarray}}
+%\newcommand{\tcancel}[1]{\leavevmode\cancel{#1}}
+\spanishdecimal{.}
+
+\begin{document}
+
+\title{Mapa del Fondo Cósmico de Microondas}
+\author{Constanza Osses Guerra}
+\email{conyosses@gmail.com}
+\affiliation{Profesor: Crist\'obal Sif\'on}
+\affiliation{Doctorado en Ciencias F\'isicas, Pontificia Universidad Cat\'olica de Valpara\'{\i}so, Chile}
+
+\begin{abstract}
+ holis
+\end{abstract}
+
+
+\maketitle
+\section{Introducción}
+- qué es el cmb
+- por que es importante
+- como se crean los mapas
+- como se obtiene el espectro a partir del mapa
+- como se obtienen los parámetros
+
+
+\subsection{creando mapa}
+\begin{equation}
+\tilde{\mathbf{M}}(\ell_x,\ell_y)=C\left(\sqrt{\ell_x^2 + \ell_y^2}\right)
+\end{equation}
+
+\begin{equation}
+\mathbf{M}\left(\theta_{x}, \theta_{y}\right)=\int d \ell_{x} \int d \ell_{y} \exp \,[-2 i(\vec{\ell} \cdot \vec{\theta})] \,\tilde{\mathbf{M}}\left(\ell_{x}, \ell_{y}\right)\, \tilde{\mathbf{G}}\left(\ell_{x}, \ell_{y}\right)
+\end{equation}
+
+\begin{equation}
+\tilde{\mathbf{G}}\left(\ell_{x}, \ell_{y}\right)=\int d \ell_{x} \int d \ell_{y} \,\exp\, [-2 i(\vec{\ell} \cdot \vec{\theta})] \,\mathcal{N}(\mu, \sigma)
+\end{equation}
+
+\subsection{creando espectro}
+
+\begin{equation}
+\mathbf{M}_{\text {apod }}\left(\theta_{x}, \theta_{y}\right)=\mathbf{M}\left(\theta_{x}, \theta_{y}\right) \circ \mathbf{W}\left(\theta_{x}, \theta_{y}\right)
+\end{equation}
+
+\begin{equation}
+\tilde{\mathbf{M}}\left(\ell_{x}, \ell_{y}\right)=\operatorname{FFT}\left(\mathbf{M}_{\text {apod }}\left(\theta_{x}, \theta_{y}\right)\right)
+\end{equation}
+
+\begin{equation}
+C_{\ell}\left(\sqrt{\ell_{x}^{2}+\ell_{y}^{2}}\right)=\left\langle\tilde{\mathbf{M}}\left(\ell_{x}, \ell_{y}\right)\right\rangle
+\end{equation}
+
+\begin{equation}
+\hat{D}_{\ell}=T_{\ell} * D_{\ell}+N_{\ell}
+\end{equation}
+
+\begin{equation}
+D_{\ell}=\frac{\left(\hat{D}_{\ell}-N_{\ell}\right)}{T_{\ell}}
+\end{equation}
+
+
+
+\end{document}
