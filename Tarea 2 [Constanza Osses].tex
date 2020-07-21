@@ -169,7 +169,7 @@ Este test indica que mientras menor sea el valor $\chi^2$, existe una mayor prob
 
 \subsection{Par\'ametros de densidad}
 
-Para obtener los espectros, se modific\'o el c\'odigo otorgado por CAMB. En primera instancia, se iter\'o 10 veces sobre cada par\'amtro entre 0.005 y 0.150. Se compar\'o cada espectro resultante con el original, obtenieno el valor de $\chi^2$ normalizado por los grados de libertad (dof = 5046). La Tabla 1 muestra los valores de $\Omega_b h^2$, $\Omega_b h^2$ con sus respectivos $chi^2$ , con valores de $\chi^2<100000$. Luego, se realiz\'o el mismo procedimiento, escogiendo ahora un rango de los par\'ametros cercanos a los valores que entregaban resultados m\'as bajos de $\chi^2$, entonces, se iteraron 10 veces los par\'ametros: $0.05<\Omega_b h^2< 0.075$ y $0.05<\Omega_c h^2<0.150$. La Tabla 2 muestra los valores de los par\'ametros para valores de $\chi^2<10000$. De la misma forma, se iter\'o nuevamente 10 veces: $0.058<\Omega_b h^2< 0.064$ y $0.090<\Omega_c h^2<0.107$. La Tabla 3 muestra los resutados para $\chi^2<3000$
+Para obtener los espectros, se modific\'o el c\'odigo otorgado por CAMB. En primera instancia, se iter\'o 10 veces sobre cada par\'amtro entre 0.005 y 0.150. Se compar\'o cada espectro resultante con el original, obtenieno el valor de $\chi^2$ normalizado por los grados de libertad (dof = 5046). La Tabla 1 muestra los mejores valores de $\Omega_b h^2$, $\Omega_b h^2$ con $\chi^2<100000$. Luego, se realiz\'o el mismo procedimiento, escogiendo ahora un rango de los par\'ametros cercanos a los valores que entregaban resultados m\'as bajos de $\chi^2$, entonces, se iteraron 50 veces los par\'ametros: $0.05<\Omega_b h^2< 0.075$ y $0.05<\Omega_c h^2<0.150$. La Tabla 2 muestra los valores de los par\'ametros para valores de $\chi^2<2500$.
 
 \begin{center}
 \begin{tabular}{| c | c | c | c |}\hline
@@ -213,15 +213,15 @@ $\Omega_b h^2$ & $\Omega_c h^2$ & $\chi^2$ & $\chi^2/$grados de libertad       \
 \captionof{table}{Mejores resultados para las nuevas 10 iteraciones: $0.058<\Omega_b h^2<0.064$ y $0.090<\Omega_b h^2<0.107$. El mejor valor del test es $\chi^2/dof = 0.4811$, lo cual corresponde a $\Omega_b h^2=0.0597$ y $\Omega_c h^2=0.1006$.}
 \end{center}
 
-Los dos mejores resultados expuestos en la Tabla 3 se grafican junto al espectro original en la Fig. ??. En concordacia con los resultados obtenidos a trav\'es del test $\chi^2$, el espectro que m\'as se ajusta a la curva del espectro original corresponde a los valores $\Omega_b h^2=0.0600$ y $\Omega_c h^2=0.1013$. Si bien no ajustan perfectamente porque en el primer peak el espectro resultantes est\'a levemente por encima del origianl, mientras que en el segundo peak est\'a un poco por deabajo. Esto quiere decir
+Los dos mejores resultados expuestos en la Tabla 2 se grafican junto al espectro original en la Fig. ??. En concordacia con los resultados obtenidos a trav\'es del test $\chi^2$, el espectro que m\'as se ajusta a la curva del espectro original corresponde a los valores $\Omega_b h^2=0.0597$ y $\Omega_c h^2=0.1006$. Si bien no ajustan perfectamente porque el primer peak del espectro resultante est\'a levemente por debajo del original, mientras que en el segundo peak se ajusta bastante bien.
 \begin{center}
    \includegraphics[width=85mm]{comparacion.png}\\
-   Figura ??.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que la l\'inea verde y roja representan los espectros obtenidos con los par\'ametros $\Omega_b h^2$=0.0600 y $\Omega_c h^2$= 0.1013 y $\Omega_b h^2$=0.0593 y $\Omega_c h^2$= 0.0994 respectivamente. Se puede observar en el gr\'afico, que la curva que m\'as se asemeja al espectro original es la verde.}
+   Figura ??.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que las dem\'as l\'ineas representan los valores de $\chi^2<2500$.}%. Se puede observar en el gr\'afico, que la curva que m\'as se asemeja al espectro original es la verde.}
 \end{center}
 
 \begin{center}
    \includegraphics[width=85mm]{comparacion2.png}\\
-   Figura ??.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que la l\'inea verde representa el espectro con los mejores valores para los par\'ametros: $\Omega_b h^2$=0.0600 y $\Omega_c h^2$= 0.1013.}
+   Figura ??.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que la l\'inea verde representa el espectro con los mejores valores para los par\'ametros: $\Omega_b h^2$=0.0597 y $\Omega_c h^2$= 0.1006.}
 \end{center}
 
 
