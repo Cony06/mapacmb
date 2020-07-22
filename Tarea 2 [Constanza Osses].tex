@@ -225,6 +225,20 @@ Para corregir los errores de la apodizaci\'on y resoluci\'on del mapa se debe in
    Figura 9.\emph{\ Mapa del CMB apodizado y reescalado.}
 \end{center}
 
+Si bien no se logr\'o obtener la curva del espectro de potencias, se pudo calcular la diferencia entre los coeficientes del espectro nuevo con el sesgo de ruido, resultando en el siguiento gr\'afico
+
+\begin{center}
+   \includegraphics[width=85mm]{resta.png}\\
+   Figura 10.\emph{\ Diferencia para el total de los coeficientes del nuevo espectro y el sesgo de ruido.}
+\end{center}
+
+
+\begin{center}
+   \includegraphics[width=85mm]{dif.png}\\
+   Figura 11.\emph{\ Diferencia iternado para cada uno de los coeficientes del nuevo espectro y el sesgo de ruido.}
+\end{center}
+
+
 \subsection{Par\'ametros de densidad}
 
 Para obtener los espectros, s\'olo se modificaron los par\'ametros de densidad biri\'onica y de materia oscura. Los dem\'as par\'ametros se dejaron tal cual estaban en el paquete entregado por CAMB y son los siguientes 
@@ -257,7 +271,7 @@ $\Omega_b h^2$ & $\Omega_c h^2$ & $\chi^2$ & $\chi^2/$grados de libertad    \\ \
 	0.0694  & 0.1339  &  35793.6990  &  7.0935 \\
 	0.0694  & 0.1500  &  58884.4855  & 11.6695 \\ \hline
 \end{tabular}\label{tabla1}
-\captionof{table}{Mejores resultados de $\chi^2$ para las primeras 10 iteraciones:$0.05<\Omega_b h^2$, $\Omega_b h^2<0.150$. En la primera columna se muestran los valores del par\'ametro de densidad bari\'onica $\Omega_b h^2$, en la segunda columna, el par\'ametro de densidad de materia oscura $\Omega_c h^2$, la tercera columna corresponde a los valores de $\chi^2$ y en la cuarta columna se muestran los valores de $\chi^2$ normalizados por los grados de libertad. El mejor resultado del test ($\chi^2/dof = 3.7976$) corresponde a $\Omega_b h^2=0.0533$ y $\Omega_c h^2=0.0856$.}
+\captionof{table}{Mejores resultados de $\chi^2$ para las primeras 11 iteraciones:$0.05<\Omega_b h^2$, $\Omega_b h^2<0.150$. En la primera columna se muestran los valores del par\'ametro de densidad bari\'onica $\Omega_b h^2$, en la segunda columna, el par\'ametro de densidad de materia oscura $\Omega_c h^2$, la tercera columna corresponde a los valores de $\chi^2$ y en la cuarta columna se muestran los valores de $\chi^2$ normalizados por los grados de libertad. El mejor resultado del test ($\chi^2/dof = 3.7976$) corresponde a $\Omega_b h^2=0.0533$ y $\Omega_c h^2=0.0856$.}
 \end{center}
 
 Posteriormente, se realiz\'o el mismo procedimiento, escogiendo ahora un rango de los par\'ametros cercanos a los valores que entregaban resultados m\'as bajos de $\chi^2$, entonces, se iteraron 50 veces los par\'ametros: $0.05<\Omega_b h^2< 0.075$ y $0.05<\Omega_c h^2<0.150$. La Tabla 2 muestra los valores de los par\'ametros para valores de $\chi^2<2500$.
@@ -274,16 +288,16 @@ $\Omega_b h^2$ & $\Omega_c h^2$ & $\chi^2$ & \,$\chi^2/$grados de libertad\,    
 \captionof{table}{Mejores resultados para las nuevas 10 iteraciones: $0.058<\Omega_b h^2<0.064$ y $0.090<\Omega_b h^2<0.107$. El mejor valor del test es $\chi^2/dof = 0.4811$, lo cual corresponde a $\Omega_b h^2=0.0597$ y $\Omega_c h^2=0.1006$.}
 \end{center}
 
-Los dos mejores resultados expuestos en la Tabla 2 se grafican junto al espectro original en la Fig. ??. En concordacia con los resultados obtenidos a trav\'es del test $\chi^2$, el espectro que m\'as se ajusta a la curva del espectro original corresponde a los valores $\Omega_b h^2=0.0597$ y $\Omega_c h^2=0.1006$. Si bien no ajustan perfectamente porque el primer peak del espectro resultante est\'a levemente por debajo del original, mientras que en el segundo peak se ajusta bastante bien.
+Los dos mejores resultados expuestos en la Tabla 3 se grafican junto al espectro original en las Fig. 12 y 13. En concordacia con los resultados obtenidos a trav\'es del test $\chi^2$, el espectro que m\'as se ajusta a la curva del espectro original corresponde a los valores $\Omega_b h^2=0.0597$ y $\Omega_c h^2=0.1006$. Si bien no ajustan perfectamente porque el primer peak del espectro resultante est\'a levemente por debajo del original, mientras que en el segundo peak se ajusta bastante bien.
 
 \begin{center}
    \includegraphics[width=85mm]{comparacion.png}\\
-   Figura 10.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que las dem\'as l\'ineas representan los valores de $\chi^2<2500$.}%. Se puede observar en el gr\'afico, que la curva que m\'as se asemeja al espectro original es la verde.}
+   Figura 12.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que las dem\'as l\'ineas representan los valores de $\chi^2<2500$.}%. Se puede observar en el gr\'afico, que la curva que m\'as se asemeja al espectro original es la verde.}
 \end{center}
 
 \begin{center}
    \includegraphics[width=85mm]{comparacion2.png}\\
-   Figura 11.\emph{\ Comparaci\'on entre los espectros obtenidos con el original. La l\'inea negra representa el espectro original mientras que la l\'inea verde representa el espectro con los mejores valores para los par\'ametros: $\Omega_b h^2$=0.0597 y $\Omega_c h^2$= 0.1006.}
+   Figura 13.\emph{\ Comparaci\'on entre el mejor espectro obtenido con el original. La l\'inea negra representa el espectro original mientras que la l\'inea verde representa el espectro con los mejores valores para los par\'ametros: $\Omega_b h^2$=0.0597 y $\Omega_c h^2$= 0.1006.}
 \end{center}
 
 
@@ -292,7 +306,7 @@ Los dos mejores resultados expuestos en la Tabla 2 se grafican junto al espectro
 
 Si bien el objetivo de este trabajo era recrear un mapa del CMB y posteriormente obtener su espectro de potencias, esto no ha sido del todo posible. La resoluci\'on utilizada (7') no fue la m\'as \'optima (0.5'), esto debido a problemas computacionales que no permitieron generar mayor cantidad de datos, sin embargo, en la literatura se encuentran art\'iculos que utilizan alrededor de esta resoluci\'on (\cite{comp1}, \cite{comp2}, \cite{comp3}). Con esta resoluci\'on, el mapa no quedar\'ia tan preciso y las fluctuaciones de temperatura no ser\'ian tan notorias.
 En la Fig. 2 se muestra los anillos equivalentes a $\ell_x$ y $\ell_y$ constantes y el valor de $C_{\ell}$ se va haciendo cada vez menor al ir aumentando los momentos multipolares. Por otro lado, el mapa debiese estar en escala angular desde 0 a 10° y el rango de temperatura del orden de $10^2\,(\mu K)$ pero al hacer la transfromaci\'on se obtiene un mapa de un solo color (Fig. 5). Al tener este mapa errado, el c\'alculo del espectro de potencias tambi\'en lo est\'a.
-Se realiz\'o el c\'alculo de los nuevos valores para $D_\ell$, sin embargo la funci\'on de transferncia no se logr\'o obtener.
+Se realiz\'o el c\'alculo de los nuevos valores para $D_\ell$, sin embargo la funci\'on de transferncia no se logr\'o obtener, se trat\'o con la propia funci\'on que viene incluida en el paquete de CAMB, con la que viene por defecto en Python, pero al generar la divisi\'on de la diferencia entre los coeficientes del espectro y el sesgo con la funci\'on de transferencia, no se obtuvo resultado.
 
 
 En cuanto a los valores de los par\'ametros, se pudieron obtener valores de los par\'ametros de densidad de $\Omega_b h^2 = 0.0597$ y $\Omega_c h^2 = 1.1006$ con valor de $\chi^2$ normalizado de $\chi^2/dof = 0.4811$. Si comparamos estos valores con los entregados por Planck, que son los que aparecen originalmente en el paquete de CAMB ($\Omega_b h^2 = 0.022$ y $\Omega_c h^2 = 1.122$), existe una diferencia del $\sim 17 \%$.
